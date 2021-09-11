@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <%- include( "partials/header.ejs") %>
+        <h1>Compose</h1>
+
+        <form class="" action="/compose" method="POST">
+            <div class="form-group">
+                <label>Titile</label>
+                <input class="form-control" name="postt" type="text">
+
+                <label>Post</label>
+                <textarea class="form-control" name="formm" id="" cols="30" rows="5"></textarea>
+            </div>
+
+
+
+
+            <button type="submit" class="btn btn-primary" name="button">Publish</button>
+        </form>
+
+        <%- include("partials/footer.ejs")  %>
+</body>
+
+</html>
